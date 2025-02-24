@@ -24,10 +24,14 @@ public class HomePageTests {
     @Test
     public void isHomeComponentPresentTest(){
         //driver.findElement(By.xpath("//h1[.='Home Component']"));
-        System.out.println("Home Component is " + isHomeComponentPresent());
+        System.out.println("Home Component is " + isElementPresent(By.xpath("//h1[.='Home Component']")));
     }
     public boolean isHomeComponentPresent(){
         return driver.findElements(By.xpath("//h1[.='Home Component']")).size()>0;
+    }
+
+    public boolean isElementPresent(By locator){
+        return driver.findElements(locator).size()>0;
     }
 
     @AfterMethod
