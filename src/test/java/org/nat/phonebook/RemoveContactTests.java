@@ -8,15 +8,13 @@ import org.testng.annotations.Test;
 public class RemoveContactTests extends TestBase {
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!isElementPresent(By.cssSelector("a:nth-child(4)"))) {
-            click(By.xpath("//button[contains(.,'Sign Out']"));
+        if (!isLoginLinkPresent()) {
+            clickOnSignOutButton();
         }
-        click(By.cssSelector("a:nth-child(4)"));
-        type(By.cssSelector("[placeholder ='Email']"), "2025@gmail.com");
-        type(By.cssSelector("[placeholder ='Password']"), "Test2025!");
-        click(By.cssSelector("button[name='login']"));
+        clickOnLoginLink();
+        fillLoginRegistrationForm("2025@gmail.com", "Test2025!");
+        clickOnLoginButton();
         click(By.cssSelector("a[href='/add']"));
-
         click(By.cssSelector("input[placeholder='Name']"));
         type(By.cssSelector("input[placeholder='Name']"), "Max");
         type(By.cssSelector("input[placeholder='Last Name']"), "Mayer");
@@ -25,13 +23,15 @@ public class RemoveContactTests extends TestBase {
         type(By.cssSelector("input[placeholder='Address']"), "Leipzig");
         type(By.cssSelector("input[placeholder='description']"), "Software tester");
         click(By.cssSelector("div[class='add_form__2rsm2'] button"));
-
     }
 
     @Test
-    public void removeContactPositiveTest() {
+    public void removeContactPositiveTest(){
+        int sizeBefore = sizeOfContacts();
         click(By.cssSelector(".contact-item_card__2SOIM"));
-        click(By.xpath("//button[normalize-space()='Remove']"));
-
+        click(By.xpath("//button[.='Remove']"));
+        pause(1000);
+        int sizeAfter = sizeOfContacts();
+        Assert.assertEquals(sizeAfter, sizeBefore-1);
     }
 }
