@@ -116,4 +116,8 @@ public class TestBase {
                 return  true;}
         return false;
         }
+
+    public boolean isSignOutButtonPresent() {
+        return isElementPresent2(By.xpath("//button[text()='Sign Out']"));
+    }
 }
