@@ -89,9 +89,9 @@ public class TestBase {
         click(By.cssSelector("button[name='login']"));
     }
 
-        public void fillLoginRegistrationForm(String email, String password) {
-        type(By.cssSelector("[placeholder ='Email']"), email);
-        type(By.cssSelector("[placeholder ='Password']"), password);
+        public void fillLoginRegistrationForm(User user) {
+        type(By.cssSelector("[placeholder ='Email']"), user.getEmail());
+        type(By.cssSelector("[placeholder ='Password']"), user.getPassword());
     }
 
     public void pause(int millis)  {
@@ -119,5 +119,39 @@ public class TestBase {
 
     public boolean isSignOutButtonPresent() {
         return isElementPresent2(By.xpath("//button[text()='Sign Out']"));
+    }
+
+    public void clickOnAddLink() {
+        click(By.cssSelector("a[href='/add']"));
+    }
+
+    public void clickOnSaveButton() {
+        click(By.cssSelector("div[class='add_form__2rsm2'] button"));
+    }
+
+    public void fillContactForm(String name, String surname, String phone, String email, String address, String description) {
+        type(By.cssSelector("input[placeholder='Name']"), name);
+        type(By.cssSelector("input[placeholder='Last Name']"), surname);
+        type(By.cssSelector("input[placeholder='Phone']"), phone);
+        type(By.cssSelector("input[placeholder='email']"), email);
+        type(By.cssSelector("input[placeholder='Address']"), address);
+        type(By.cssSelector("input[placeholder='description']"), description);
+    }
+
+    public void removeContact() {
+        click(By.cssSelector(".contact-item_card__2SOIM"));
+        click(By.xpath("//button[.='Remove']"));
+    }
+
+    public void addContact() {
+        clickOnAddLink();
+        fillContactForm("Max", "Mayer", "49123456789", "Max@gmail.com", "Leipzig", "Software tester");
+        clickOnSaveButton();
+    }
+
+    public void login() {
+        clickOnLoginLink();
+        fillLoginRegistrationForm(new User().setEmail("2025@gmail.com").setPassword("Test2025!"));
+        clickOnLoginButton();
     }
 }

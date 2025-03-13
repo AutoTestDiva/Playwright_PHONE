@@ -1,6 +1,5 @@
 package org.nat.phonebook;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -25,7 +24,7 @@ public class CreateAccountTests extends TestBase {
 
     @Test
     public void existedUserRegistrationNegativeTest() {
-        fillLoginRegistrationForm("2025@gmail.com", "Test2025!");
+        fillLoginRegistrationForm(new User().setEmail("2025@gmail.com").setPassword("Test2025!"));
         clickOnRegistrationButton();
         Assert.assertTrue(isAlertPresent());
     }
