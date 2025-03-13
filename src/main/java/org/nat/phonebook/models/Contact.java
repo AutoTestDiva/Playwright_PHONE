@@ -1,4 +1,4 @@
-package org.nat.phonebook;
+package org.nat.phonebook.models;
 
 public class Contact {
     private String name;

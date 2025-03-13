@@ -1,5 +1,6 @@
 package org.nat.phonebook;
 
+import org.nat.phonebook.models.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -8,10 +9,10 @@ public class CreateAccountTests extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!app.isLoginLinkPresent()) {
-            app.clickOnSignOutButton();
+        if (!app.getUser().isLoginLinkPresent()) {
+            app.getUser().clickOnSignOutButton();
         }
-        app.clickOnLoginLink();
+        app.getUser().clickOnLoginLink();
     }
 
 //    @Test
@@ -24,8 +25,10 @@ public class CreateAccountTests extends TestBase {
 
     @Test
     public void existedUserRegistrationNegativeTest() {
-        app.fillLoginRegistrationForm(new User().setEmail("2025@gmail.com").setPassword("Test2025!"));
-        app.clickOnRegistrationButton();
-        Assert.assertTrue(app.isAlertPresent());
+        app.getUser().fillLoginRegistrationForm(new User()
+                .setEmail("2025@gmail.com")
+                .setPassword("Test2025!"));
+        app.getUser().clickOnRegistrationButton();
+        Assert.assertTrue(app.getUser().isAlertPresent());
     }
 }

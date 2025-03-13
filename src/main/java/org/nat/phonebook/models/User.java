@@ -1,4 +1,4 @@
-package org.nat.phonebook;
+package org.nat.phonebook.models;
 
 public class User {
     private  String email;

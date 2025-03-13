@@ -1,5 +1,6 @@
 package org.nat.phonebook;
 
+import org.nat.phonebook.framework.ApplicationManager;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
