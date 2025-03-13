@@ -8,10 +8,10 @@ public class CreateAccountTests extends TestBase {
 
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!isLoginLinkPresent()) {
-            clickOnSignOutButton();
+        if (!app.isLoginLinkPresent()) {
+            app.clickOnSignOutButton();
         }
-        clickOnLoginLink();
+        app.clickOnLoginLink();
     }
 
 //    @Test
@@ -24,8 +24,8 @@ public class CreateAccountTests extends TestBase {
 
     @Test
     public void existedUserRegistrationNegativeTest() {
-        fillLoginRegistrationForm(new User().setEmail("2025@gmail.com").setPassword("Test2025!"));
-        clickOnRegistrationButton();
-        Assert.assertTrue(isAlertPresent());
+        app.fillLoginRegistrationForm(new User().setEmail("2025@gmail.com").setPassword("Test2025!"));
+        app.clickOnRegistrationButton();
+        Assert.assertTrue(app.isAlertPresent());
     }
 }

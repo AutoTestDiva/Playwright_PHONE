@@ -7,19 +7,19 @@ import org.testng.annotations.Test;
 public class RemoveContactTests extends TestBase {
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!isLoginLinkPresent()) {
-            clickOnSignOutButton();
+        if (!app.isLoginLinkPresent()) {
+            app.clickOnSignOutButton();
         }
-        login();
-        addContact();
+        app.login();
+        app.addContact();
     }
 
     @Test
     public void removeContactPositiveTest() {
-        int sizeBefore = sizeOfContacts();
-        removeContact();
-        pause(1000);
-        int sizeAfter = sizeOfContacts();
+        int sizeBefore = app.sizeOfContacts();
+        app.removeContact();
+        app.pause(1000);
+        int sizeAfter = app.sizeOfContacts();
         Assert.assertEquals(sizeAfter, sizeBefore - 1);
     }
 }

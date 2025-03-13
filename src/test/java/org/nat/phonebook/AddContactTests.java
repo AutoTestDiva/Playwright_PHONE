@@ -8,29 +8,29 @@ import org.testng.annotations.Test;
 public class AddContactTests extends TestBase{
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!isLoginLinkPresent()) {
-            clickOnSignOutButton();
+        if (!app.isLoginLinkPresent()) {
+            app.clickOnSignOutButton();
         }
-        login();
-        clickOnAddLink();
+        app.login();
+        app.clickOnAddLink();
     }
 
     @Test
     public void addContactPositiveTest(){
-        fillContactForm(new Contact()
+        app.fillContactForm(new Contact()
                 .setName("Max")
                 .setSurname("Mayer")
                 .setPhone("49123456789")
                 .setEmail("Max@gmail.com")
                 .setAddress("Leipzig")
                 .setDescription("Software tester"));
-        clickOnSaveButton();
-        Assert.assertTrue(isContactAdded("Max"));
+        app.clickOnSaveButton();
+        Assert.assertTrue(app.isContactAdded("Max"));
     }
 
     @AfterMethod
     public void postCondition(){
-        removeContact();
+        app.removeContact();
     }
 }
 
