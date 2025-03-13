@@ -7,10 +7,10 @@ public class User {
     public User setEmail(String email) {
         return this;
     }
-
     public User setPassword(String password) {
         return this;
     }
+
 
     public String getEmail() {
         return email;

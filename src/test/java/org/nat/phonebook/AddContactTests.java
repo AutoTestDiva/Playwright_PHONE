@@ -17,7 +17,13 @@ public class AddContactTests extends TestBase{
 
     @Test
     public void addContactPositiveTest(){
-        fillContactForm("Max", "Mayer", "49123456789", "Max@gmail.com", "Leipzig", "Software tester");
+        fillContactForm(new Contact()
+                .setName("Max")
+                .setSurname("Mayer")
+                .setPhone("49123456789")
+                .setEmail("Max@gmail.com")
+                .setAddress("Leipzig")
+                .setDescription("Software tester"));
         clickOnSaveButton();
         Assert.assertTrue(isContactAdded("Max"));
     }

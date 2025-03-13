@@ -54,9 +54,12 @@ public class TestBase {
     }
 
     public void type(By locator, String text) {
+        if(text != null){
         click(locator);
         driver.findElement(locator).clear();
         driver.findElement(locator).sendKeys(text);
+        }
+
     }
 
     public boolean isAlertPresent() {
@@ -129,13 +132,13 @@ public class TestBase {
         click(By.cssSelector("div[class='add_form__2rsm2'] button"));
     }
 
-    public void fillContactForm(String name, String surname, String phone, String email, String address, String description) {
-        type(By.cssSelector("input[placeholder='Name']"), name);
-        type(By.cssSelector("input[placeholder='Last Name']"), surname);
-        type(By.cssSelector("input[placeholder='Phone']"), phone);
-        type(By.cssSelector("input[placeholder='email']"), email);
-        type(By.cssSelector("input[placeholder='Address']"), address);
-        type(By.cssSelector("input[placeholder='description']"), description);
+    public void fillContactForm(Contact contact) {
+        type(By.cssSelector("input[placeholder='Name']"), contact.getName());
+        type(By.cssSelector("input[placeholder='Last Name']"), contact.getSurname());
+        type(By.cssSelector("input[placeholder='Phone']"), contact.getPhone());
+        type(By.cssSelector("input[placeholder='email']"), contact.getEmail());
+        type(By.cssSelector("input[placeholder='Address']"), contact.getAddress());
+        type(By.cssSelector("input[placeholder='description']"), contact.getDescription());
     }
 
     public void removeContact() {
@@ -145,13 +148,21 @@ public class TestBase {
 
     public void addContact() {
         clickOnAddLink();
-        fillContactForm("Max", "Mayer", "49123456789", "Max@gmail.com", "Leipzig", "Software tester");
+        fillContactForm(new Contact()
+                .setName("Max")
+                .setSurname("Mayer")
+                .setPhone("49123456789")
+                .setEmail("Max@gmail.com")
+                .setAddress("Leipzig")
+                .setDescription("Software tester"));
         clickOnSaveButton();
     }
 
     public void login() {
         clickOnLoginLink();
-        fillLoginRegistrationForm(new User().setEmail("2025@gmail.com").setPassword("Test2025!"));
+        fillLoginRegistrationForm(new User()
+                .setEmail("2025@gmail.com")
+                .setPassword("Test2025!"));
         clickOnLoginButton();
     }
 }
