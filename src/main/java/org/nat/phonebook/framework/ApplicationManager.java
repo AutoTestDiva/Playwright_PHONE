@@ -13,6 +13,7 @@ public class ApplicationManager {
     HomePageHelper homePage;
 
     public void init() {
+        System.err.close();
         driver = new ChromeDriver();
         driver.get("https://telranedu.web.app");
         //max window

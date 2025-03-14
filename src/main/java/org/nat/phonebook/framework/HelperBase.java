@@ -1,5 +1,6 @@
 package org.nat.phonebook.framework;
 
+import org.nat.phonebook.models.User;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -61,4 +62,5 @@ public class HelperBase {
             throw new RuntimeException(e);
         }
     }
+
 }

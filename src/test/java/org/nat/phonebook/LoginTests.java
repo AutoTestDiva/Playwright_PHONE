@@ -16,13 +16,16 @@ public class LoginTests extends TestBase {
 
     @Test
     public void loginPositiveTest(){
-        app.getUser().fillLoginRegistrationForm(new User().setEmail("2025@gmail.com").setPassword("Test2025!"));
+        app.getUser().fillLoginRegistrationForm(new User()
+                .setEmail("2025@gmail.com")
+                .setPassword("Test2025!"));
         app.getUser().clickOnLoginButton();
         Assert.assertTrue(app.getUser().isSignOutButtonPresent());
     }
     @Test
     public void loginNegativeTest(){
-        app.getUser().fillLoginRegistrationForm(new User().setPassword("Test2025!"));
+        app.getUser().fillLoginRegistrationForm(new User()
+                .setPassword("Test2025!"));
         app.getUser().clickOnLoginButton();
         Assert.assertTrue(app.getUser().isAlertPresent());
     }

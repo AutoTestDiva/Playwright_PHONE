@@ -1,5 +1,6 @@
 package org.nat.phonebook.framework;
 
+
 import org.nat.phonebook.models.User;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +12,7 @@ public class UserHelper extends HelperBase{
     }
 
     public void clickOnLoginLink() {
-        click(By.cssSelector("a:nth-child(4)"));
+        click(By.xpath("//a[.='LOGIN']"));
     }
 
     public void clickOnSignOutButton() {
@@ -19,7 +20,7 @@ public class UserHelper extends HelperBase{
     }
 
     public boolean isLoginLinkPresent() {
-        return isElementPresent(By.cssSelector("a:nth-child(4)"));
+        return isElementPresent(By.xpath("//a[.='LOGIN']"));
     }
 
     public void clickOnRegistrationButton() {

@@ -5,13 +5,15 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class RemoveContactTests extends TestBase {
-    @BeforeMethod
+   // @BeforeMethod
+    @Test
     public void ensurePrecondition() {
         if (!app.getUser().isLoginLinkPresent()) {
             app.getUser().clickOnSignOutButton();
         }
         app.getUser().login();
-        app.getContact().addContact();
+
+//        app.getContact().addContact();
     }
 
     @Test
