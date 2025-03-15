@@ -25,7 +25,7 @@ public class TestBase {
 
     @BeforeMethod
     public void startTest(){
-        logger.info("Start nest");
+        logger.info("Start test");
     }
 
     @AfterMethod
