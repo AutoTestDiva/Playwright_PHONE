@@ -17,4 +17,6 @@ out/
 .factorypath
 .project
 .settings
-
+.log
+.png
+.avi

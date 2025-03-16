@@ -13,6 +13,7 @@ dependencies {
     implementation 'org.seleniumhq.selenium:selenium-java:4.28.1'
     implementation 'org.testng:testng:7.10.0'
     implementation 'ch.qos.logback:logback-classic:1.5.17'
+    implementation 'com.github.stephenc.monte:monte-screen-recorder:0.7.7.0'
 }
 
 test {

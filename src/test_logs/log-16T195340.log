@@ -1,0 +1,4 @@
+6905 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test loginPositiveTest
+8204 [Test worker] ERROR org.nat.phonebook.TestBase -- FAILED: loginPositiveTestScreenshot: D:\GitHub\PHONE\screenshots\screen1742151228.png
+8205 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+8206 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
