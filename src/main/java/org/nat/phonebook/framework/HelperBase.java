@@ -1,6 +1,7 @@
 package org.nat.phonebook.framework;
 
 import com.google.common.io.Files;
+import org.monte.media.Format;
 import org.monte.media.FormatKeys;
 import org.monte.media.math.Rational;
 import org.monte.screenrecorder.ScreenRecorder;
@@ -14,7 +15,6 @@ import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.io.File;
 import java.io.IOException;
-import java.text.Format;
 import java.time.Duration;
 import java.util.NoSuchElementException;
 
@@ -28,15 +28,15 @@ public class HelperBase {
         this.driver = driver;
     }
 
-    public boolean isElementPresent(By locator){
-        return driver.findElements(locator).size()>0;
+    public boolean isElementPresent(By locator) {
+        return driver.findElements(locator).size() > 0;
     }
 
-    public boolean isElementPresent2(By locator){
-        try{
+    public boolean isElementPresent2(By locator) {
+        try {
             driver.findElement(locator);
             return true;
-        }catch (NoSuchElementException ex){
+        } catch (NoSuchElementException ex) {
             return false;
         }
     }
@@ -46,12 +46,11 @@ public class HelperBase {
     }
 
     public void type(By locator, String text) {
-        if(text != null){
-        click(locator);
-        driver.findElement(locator).clear();
-        driver.findElement(locator).sendKeys(text);
+        if (text != null) {
+            click(locator);
+            driver.findElement(locator).clear();
+            driver.findElement(locator).sendKeys(text);
         }
-
     }
 
     public boolean isAlertPresent() {
@@ -66,14 +65,15 @@ public class HelperBase {
         }
     }
 
-    public void pause(int millis)  {
+    public void pause(int millis) {
         try {
             Thread.sleep(millis);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
-    public String takeScreenshot(){
+
+    public String takeScreenshot() {
         File tmp = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File screenshot = new File("screenshots/screen" + System.currentTimeMillis() / 1000 + ".png");
         try {
@@ -82,32 +82,43 @@ public class HelperBase {
             throw new RuntimeException(e);
         }
         return screenshot.getAbsolutePath();
-
     }
+
     private ScreenRecorder screenRecorder;
-    public void startRecording(){
+
+    public void startRecording() throws IOException, AWTException {
         File file = new File("record");
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         int with = screenSize.width;
         int height = screenSize.height;
 
-        Rectangle captureSize = new Rectangle(0,0,with,height);
+        Rectangle captureSize = new Rectangle(0, 0, with, height);
         GraphicsConfiguration gc = GraphicsEnvironment
                 .getLocalGraphicsEnvironment()
                 .getDefaultScreenDevice()
                 .getDefaultConfiguration();
-        screenRecorder = new Recorder(gc,captureSize,
+
+        screenRecorder = new Recorder(gc, captureSize,
                 new Format(MediaTypeKey, FormatKeys.MediaType.FILE, MimeTypeKey, MIME_AVI),
-                new Format(MediaTypeKey, MediaType.VIDEO,EncodingKey,ENCODING_AVI_MJPG,
+                new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, ENCODING_AVI_MJPG,
                         CompressorNameKey, ENCODING_AVI_MJPG, DepthKey, 24, FrameRateKey,
-                        Rational.valueOf(15), QualityKey, 1.0f, KeyFrameIntervalKey, 15*60),
+                        Rational.valueOf(15), QualityKey, 1.0f, KeyFrameIntervalKey, 15 * 60),
                 new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, "black", FrameRateKey,
-                        Rational.valueOf(30))
-        )
-
+                        Rational.valueOf(30)),
+                null, file, "MyVideo");
+        screenRecorder.start();
     }
-    public void stopRecording(){
 
+    public void stopRecording() throws IOException {
+    screenRecorder.stop();
+    }
+    public void deleteScreencast(){
+        File directory = new File("record");
+
+        File[] files = directory.listFiles();
+        for(File f:files){
+            f.delete();
+        }
     }
 
 }

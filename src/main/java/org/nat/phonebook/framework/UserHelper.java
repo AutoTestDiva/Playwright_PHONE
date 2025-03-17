@@ -46,4 +46,10 @@ public class UserHelper extends HelperBase{
     public boolean isSignOutButtonPresent() {
         return isElementPresent2(By.xpath("//button[text()='Sign Out']"));
     }
+    public void fillLoginRegistrationFormForScreencast(User user) {
+        type(By.cssSelector("[placeholder ='Email']"), user.getEmail());
+        pause(500);
+        type(By.cssSelector("[placeholder ='Password']"), user.getPassword());
+        pause(500);
+    }
 }
