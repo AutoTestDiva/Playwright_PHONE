@@ -1,15 +1,25 @@
 package org.nat.phonebook.framework;
 
 import com.google.common.io.Files;
-import org.nat.phonebook.models.User;
+import org.monte.media.FormatKeys;
+import org.monte.media.math.Rational;
+import org.monte.screenrecorder.ScreenRecorder;
+import org.nat.phonebook.utils.Recorder;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.awt.*;
+import java.awt.Dimension;
+import java.awt.Rectangle;
 import java.io.File;
 import java.io.IOException;
+import java.text.Format;
 import java.time.Duration;
 import java.util.NoSuchElementException;
+
+import static org.monte.media.FormatKeys.*;
+import static org.monte.media.VideoFormatKeys.*;
 
 public class HelperBase {
     WebDriver driver;
@@ -72,6 +82,31 @@ public class HelperBase {
             throw new RuntimeException(e);
         }
         return screenshot.getAbsolutePath();
+
+    }
+    private ScreenRecorder screenRecorder;
+    public void startRecording(){
+        File file = new File("record");
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int with = screenSize.width;
+        int height = screenSize.height;
+
+        Rectangle captureSize = new Rectangle(0,0,with,height);
+        GraphicsConfiguration gc = GraphicsEnvironment
+                .getLocalGraphicsEnvironment()
+                .getDefaultScreenDevice()
+                .getDefaultConfiguration();
+        screenRecorder = new Recorder(gc,captureSize,
+                new Format(MediaTypeKey, FormatKeys.MediaType.FILE, MimeTypeKey, MIME_AVI),
+                new Format(MediaTypeKey, MediaType.VIDEO,EncodingKey,ENCODING_AVI_MJPG,
+                        CompressorNameKey, ENCODING_AVI_MJPG, DepthKey, 24, FrameRateKey,
+                        Rational.valueOf(15), QualityKey, 1.0f, KeyFrameIntervalKey, 15*60),
+                new Format(MediaTypeKey, MediaType.VIDEO, EncodingKey, "black", FrameRateKey,
+                        Rational.valueOf(30))
+        )
+
+    }
+    public void stopRecording(){
 
     }
 
