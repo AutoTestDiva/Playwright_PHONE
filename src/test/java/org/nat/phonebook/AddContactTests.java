@@ -7,6 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -61,6 +62,35 @@ public class AddContactTests extends TestBase{
                 .setDescription(description));
         app.getContact().clickOnSaveButton();
         Assert.assertTrue(app.getContact().isContactAdded(name));
+    }
+
+    @DataProvider
+    public Iterator<Object[]> newContactWithCSVFile() throws IOException {
+        List<Object[]> list = new ArrayList<>();
+
+        BufferedReader reader = new BufferedReader(new FileReader((new File("src/main/resources/contact.csv"))));
+
+        String line = reader.readLine();
+    while (line!=null) {
+        String[] split = line.split(",");
+
+        list.add(new Object[]{new Contact().setName(split[0])
+                .setSurname(split[1])
+                .setPhone(split[2])
+                .setEmail(split[3])
+                .setAddress(split[4])
+                .setDescription(split[5])});
+        line = reader.readLine();
+    }
+        return list.iterator();
+    }
+
+
+    @Test(dataProvider = "newContactWithCSVFile")
+    public void addContactPositiveTestFromDataProviderWithCSV(Contact contact){
+        app.getContact().fillContactForm(contact);
+        app.getContact().clickOnSaveButton();
+        Assert.assertEquals(Integer.toString(app.getContact().sizeOfContacts()), "1");
     }
 
 }

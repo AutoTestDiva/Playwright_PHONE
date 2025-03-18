@@ -1,4 +1,0 @@
-8027 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test loginPositiveTestWithScreencast
-14243 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: loginPositiveTestWithScreencast
-14244 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
-14245 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************

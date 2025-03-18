@@ -1,0 +1,20 @@
+5044 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV
+9858 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+9859 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+9859 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+9862 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV
+23409 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+23410 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+23410 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+23413 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV
+36689 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+36690 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+36690 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+36692 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV
+50013 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+50013 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+50013 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+50016 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV
+63329 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+63330 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+63330 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
