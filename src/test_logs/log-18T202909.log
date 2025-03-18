@@ -1,0 +1,5 @@
+6905 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProvider
+12032 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProvider
+12032 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+12032 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+12035 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProvider

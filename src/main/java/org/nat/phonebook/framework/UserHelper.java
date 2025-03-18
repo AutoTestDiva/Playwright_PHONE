@@ -16,7 +16,7 @@ public class UserHelper extends HelperBase{
     }
 
     public void clickOnSignOutButton() {
-        click(By.xpath("//button[contains(.,'Sign Out']"));
+        click(By.xpath("//button[normalize-space()='Sign Out']"));
     }
 
     public boolean isLoginLinkPresent() {
