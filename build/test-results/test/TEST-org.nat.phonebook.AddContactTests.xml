@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.nat.phonebook.AddContactTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-03-19T16:27:45" hostname="NATALI" time="55.406">
+  <properties/>
+  <testcase name="addContactPositiveTestFromDataProviderWithCSV[0](Contact{name='Le', phone='1234567899'})" classname="org.nat.phonebook.AddContactTests" time="2.657"/>
+  <testcase name="addContactPositiveTestFromDataProviderWithCSV[1](Contact{name='Manuelllllllllll', phone='1234567899'})" classname="org.nat.phonebook.AddContactTests" time="1.749"/>
+  <testcase name="addContactPositiveTestFromDataProviderWithCSV[2](Contact{name='Manuel-le', phone='1234567899'})" classname="org.nat.phonebook.AddContactTests" time="1.681"/>
+  <testcase name="addContactPositiveTestFromDataProviderWithCSV[3](Contact{name='Manuel-Le', phone='1234567899'})" classname="org.nat.phonebook.AddContactTests" time="1.655"/>
+  <testcase name="addContactPositiveTestFromDataProviderWithCSV[4](Contact{name='Manuel', phone='1234567899'})" classname="org.nat.phonebook.AddContactTests" time="1.621"/>
+  <system-out><![CDATA[17:27:42.619 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Le', phone='1234567899'}]
+17:27:48.482 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+17:27:48.482 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+17:27:48.482 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+17:27:48.485 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Manuelllllllllll', phone='1234567899'}]
+17:28:01.884 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+17:28:01.890 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+17:28:01.891 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+17:28:01.894 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Manuel-le', phone='1234567899'}]
+17:28:14.977 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+17:28:14.978 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+17:28:14.978 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+17:28:14.990 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Manuel-Le', phone='1234567899'}]
+17:28:28.135 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+17:28:28.135 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+17:28:28.136 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+17:28:28.139 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Manuel', phone='1234567899'}]
+17:28:41.190 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+17:28:41.191 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+17:28:41.191 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
