@@ -1,0 +1,4 @@
+5762 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test removeContactPositiveTest with data: []
+21999 [Test worker] ERROR org.nat.phonebook.TestBase -- FAILED: removeContactPositiveTestScreenshot: D:\GitHub\PHONE\screenshots\screen1742499595.png
+22001 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+22002 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************

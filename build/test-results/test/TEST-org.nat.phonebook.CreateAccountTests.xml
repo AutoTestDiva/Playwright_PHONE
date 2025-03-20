@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.nat.phonebook.CreateAccountTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-20T19:44:26" hostname="NATALI" time="1.097">
+  <properties/>
+  <testcase name="existedUserRegistrationNegativeTest" classname="org.nat.phonebook.CreateAccountTests" time="1.097"/>
+  <system-out><![CDATA[20:44:16.519 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test existedUserRegistrationNegativeTest with data: []
+20:44:27.875 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: existedUserRegistrationNegativeTest
+20:44:27.876 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+20:44:27.876 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

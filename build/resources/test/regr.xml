@@ -7,9 +7,14 @@
             <class name="org.nat.phonebook.LoginTests">
             <methods>
                 <exclude name=".*Negative.*"/>
+                <exclude name=".*Screencast.*"/>
             </methods>
         </class>
-            <class name="org.nat.phonebook.AddContactTests"/>
+            <class name="org.nat.phonebook.AddContactTests">
+                <methods>
+                    <exclude name=".*DataProvider.*"/>
+                </methods>
+            </class>
             <class name="org.nat.phonebook.RemoveContactTests"/>
         </classes>
     </test>

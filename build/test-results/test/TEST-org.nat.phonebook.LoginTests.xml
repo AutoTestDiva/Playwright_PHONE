@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.nat.phonebook.LoginTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-03-20T19:44:38" hostname="NATALI" time="22.292">
+  <properties/>
+  <testcase name="loginNegativeTest" classname="org.nat.phonebook.LoginTests" time="1.953"/>
+  <testcase name="loginPositiveTest" classname="org.nat.phonebook.LoginTests" time="0.896"/>
+  <testcase name="loginPositiveTestWithScreencast" classname="org.nat.phonebook.LoginTests" time="9.061"/>
+  <system-out><![CDATA[20:44:38.163 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test loginNegativeTest with data: []
+20:44:40.257 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: loginNegativeTest
+20:44:40.257 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+20:44:40.258 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+20:44:40.262 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test loginPositiveTest with data: []
+20:44:41.300 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: loginPositiveTest
+20:44:41.301 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+20:44:41.301 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+20:44:41.304 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test loginPositiveTestWithScreencast with data: []
+20:45:00.590 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: loginPositiveTestWithScreencast
+20:45:00.591 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+20:45:00.591 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

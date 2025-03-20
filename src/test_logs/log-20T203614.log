@@ -1,0 +1,4 @@
+5575 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTest with data: []
+9791 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTest
+9792 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+9792 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************

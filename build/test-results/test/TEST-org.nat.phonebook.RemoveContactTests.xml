@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.nat.phonebook.RemoveContactTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-20T19:45:13" hostname="NATALI" time="1.562">
+  <properties/>
+  <testcase name="removeContactPositiveTest" classname="org.nat.phonebook.RemoveContactTests" time="1.562"/>
+  <system-out><![CDATA[20:45:00.594 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test removeContactPositiveTest with data: []
+20:45:14.756 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: removeContactPositiveTest
+20:45:14.758 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+20:45:14.760 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

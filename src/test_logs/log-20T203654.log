@@ -1,0 +1,25 @@
+5685 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTest with data: []
+10306 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTest
+10307 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+10307 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+10326 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver, Kann, 1234567890, k@g.com, Berlin, actor]
+23803 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProvider
+23803 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+23803 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+23812 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver1, Kann, 1234567880, k@g.com, Berlin, actor]
+37066 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProvider
+37067 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+37067 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+37070 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver2, Kann, 1234567870, k@g.com, Berlin, actor]
+50329 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProvider
+50329 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+50329 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+50349 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Le', phone='1234567899'}]
+64199 [Test worker] ERROR org.nat.phonebook.TestBase -- FAILED: addContactPositiveTestFromDataProviderWithCSVScreenshot: D:\GitHub\PHONE\screenshots\screen1742499478.png
+64200 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+64200 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+64207 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Manuelllllllllll', phone='1234567899'}]
+78811 [Test worker] ERROR org.nat.phonebook.TestBase -- FAILED: addContactPositiveTestFromDataProviderWithCSVScreenshot: D:\GitHub\PHONE\screenshots\screen1742499493.png
+78812 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+78812 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+78814 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Manuel-le', phone='1234567899'}]
