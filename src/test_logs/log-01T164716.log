@@ -1,0 +1,60 @@
+6269 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTest with data: []
+10873 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTest
+10873 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+10874 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+10892 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver, Kann, 1234567890, k@g.com, Berlin, actor]
+24322 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProvider
+24322 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+24323 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+24329 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver1, Kann, 1234567880, k@g.com, Berlin, actor]
+37568 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProvider
+37568 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+37568 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+37571 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProvider with data: [Oliver2, Kann, 1234567870, k@g.com, Berlin, actor]
+50937 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProvider
+50937 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+50937 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+50962 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Le', phone='1234567899'}]
+64335 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+64335 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+64336 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+64338 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Manuelllllllllll', phone='1234567899'}]
+77603 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+77604 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+77604 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+77606 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Manuel-le', phone='1234567899'}]
+90851 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+90851 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+90852 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+90854 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Manuel-Le', phone='1234567899'}]
+104150 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+104151 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+104151 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+104153 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test addContactPositiveTestFromDataProviderWithCSV with data: [Contact{name='Manuel', phone='1234567899'}]
+117373 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: addContactPositiveTestFromDataProviderWithCSV
+117373 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+117373 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+117377 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test existedUserRegistrationNegativeTest with data: []
+128945 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: existedUserRegistrationNegativeTest
+128946 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+128947 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+128949 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test isHomeComponentPresentTest with data: []
+139177 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: isHomeComponentPresentTest
+139178 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+139178 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+139181 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test loginNegativeTest with data: []
+140774 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: loginNegativeTest
+140778 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+140778 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+140785 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test loginPositiveTest with data: []
+141768 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: loginPositiveTest
+141770 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+141771 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+141777 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test loginPositiveTestWithScreencast with data: []
+159551 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: loginPositiveTestWithScreencast
+159552 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+159552 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+159554 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test removeContactPositiveTest with data: []
+173768 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: removeContactPositiveTest
+173770 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+173772 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************

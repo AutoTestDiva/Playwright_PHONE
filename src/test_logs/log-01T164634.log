@@ -1,0 +1,12 @@
+7658 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test loginNegativeTest with data: []
+10558 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: loginNegativeTest
+10561 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+10562 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+10579 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test loginPositiveTest with data: []
+12075 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: loginPositiveTest
+12076 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+12076 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
+12083 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test loginPositiveTestWithScreencast with data: []
+29435 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: loginPositiveTestWithScreencast
+29436 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+29436 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************

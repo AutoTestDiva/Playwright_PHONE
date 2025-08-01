@@ -1,4 +1,0 @@
-5651 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test removeContactPositiveTest with data: []
-10948 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: removeContactPositiveTest
-10949 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
-10949 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************

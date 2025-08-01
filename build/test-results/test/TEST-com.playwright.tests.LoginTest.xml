@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.playwright.tests.LoginTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-08-01T17:17:41" hostname="NATALI" time="11.408">
+  <properties/>
+  <testcase name="testCorrectLoginCredentials()" classname="com.playwright.tests.LoginTest" time="5.428"/>
+  <testcase name="testLockedOutUser()" classname="com.playwright.tests.LoginTest" time="5.216"/>
+  <system-out><![CDATA[Allure environment data saved.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

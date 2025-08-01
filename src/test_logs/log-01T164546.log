@@ -1,0 +1,4 @@
+10633 [Test worker] INFO  org.nat.phonebook.TestBase -- Start test loginPositiveTest with data: []
+13320 [Test worker] INFO  org.nat.phonebook.TestBase -- PASSED: loginPositiveTest
+13321 [Test worker] INFO  org.nat.phonebook.TestBase -- Stop test
+13321 [Test worker] ERROR org.nat.phonebook.TestBase -- *****************************
