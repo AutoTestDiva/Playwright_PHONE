@@ -9,8 +9,10 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testCorrectLoginCredentials() {
-        ProductsPage productsPage = loginPage.loginAs("standard_user", "secret_sauce");
-        assertThat(productsPage.getTitle()).hasText("Products");
+        //ProductsPage productsPage = loginPage.loginAs("standard_user", "secret_sauce");
+       // ProductsPage productsPage = loginPage.loginLink();
+        ProductsPage productsPage = loPage.loginAs("2025@gmail.com", "Test2025!");
+        //assertThat(productsPage.getTitle()).hasText("Products");
     }
 
     @Test

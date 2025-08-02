@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.playwright.tests.LoginTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-08-01T17:17:41" hostname="NATALI" time="11.408">
+<testsuite name="com.playwright.tests.LoginTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-02T12:11:05" hostname="NATALI" time="3.024">
   <properties/>
-  <testcase name="testCorrectLoginCredentials()" classname="com.playwright.tests.LoginTest" time="5.428"/>
-  <testcase name="testLockedOutUser()" classname="com.playwright.tests.LoginTest" time="5.216"/>
+  <testcase name="testCorrectLoginCredentials()" classname="com.playwright.tests.LoginTest" time="3.024"/>
   <system-out><![CDATA[Allure environment data saved.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
