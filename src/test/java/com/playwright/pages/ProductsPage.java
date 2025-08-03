@@ -18,9 +18,10 @@ public final class ProductsPage extends BasePage {
         sideNavMenu = new SideNavMenu(page);
     }
 
-    @Step("Get title of the 'Products' page")
-    public Locator getTitle() {
-        return page.locator(".title");
+    //@Step("Get title of the 'Products' page")
+    @Step("Find button 'Sign Out'")
+    public Locator signOutButton() {
+        return page.locator("button:has-text('Sign Out')");
     }
 
     @Step("Get all products names")

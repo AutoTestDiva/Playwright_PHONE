@@ -1,6 +1,7 @@
 package com.playwright.tests;
 
 import com.playwright.pages.ProductsPage;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
@@ -9,16 +10,17 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testCorrectLoginCredentials() {
-        //ProductsPage productsPage = loginPage.loginAs("standard_user", "secret_sauce");
-       // ProductsPage productsPage = loginPage.loginLink();
         ProductsPage productsPage = loginPage.loginAs("2025@gmail.com", "Test2025!");
-        //assertThat(productsPage.getTitle()).hasText("Products");
+        assertThat(productsPage.signOutButton()).hasText("Sign Out");
     }
 
+
     @Test
-    public void testLockedOutUser() {
-        loginPage.loginAs("wrong", "fake");
-        assertThat(loginPage.getErrorMessage())
-                .hasText("Epic sadface: Username and password do not match any user in this service");
+    public void testIncorrectLoginCredentials() {
+       loginPage.loginAs("wrong", "fake");
+        page.onDialog(dialog -> {
+            Assertions.assertEquals("Wrong email or password", dialog.message());
+            dialog.accept(); // Закрываем alert
+        });
     }
 }
